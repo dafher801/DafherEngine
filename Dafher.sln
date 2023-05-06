@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DafherEngine", "DafherEngine\DafherEngine.vcxproj", "{972989E0-2CD7-4AE6-98E0-FDB5A6EA78D7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{972989E0-2CD7-4AE6-98E0-FDB5A6EA78D7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DafherRenderer", "DafherRenderer\DafherRenderer.vcxproj", "{2CEFBA7E-E733-4076-AFBB-E77C59F49CF5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{2CEFBA7E-E733-4076-AFBB-E77C59F49CF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

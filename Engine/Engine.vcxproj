@@ -24,6 +24,7 @@
     <ProjectGuid>{2cefba7e-e733-4076-afbb-e77c59f49cf5}</ProjectGuid>
     <RootNamespace>DafherRenderer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Engine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
