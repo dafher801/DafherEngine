@@ -72,22 +72,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\release;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)x64\Release\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\release;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)x64\Release\</OutDir>
   </PropertyGroup>
@@ -97,9 +97,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>RendererMinimal.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>CoreMinimal.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -117,9 +117,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>RendererMinimal.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>CoreMinimal.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -137,9 +137,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>RendererMinimal.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>CoreMinimal.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -157,9 +157,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>RendererMinimal.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)DafherRenderer\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>CoreMinimal.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -172,16 +172,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Renderer\DescriptorHeap.h" />
+    <ClInclude Include="Renderer\GraphicDevice.h" />
+    <ClInclude Include="Renderer\CommandQueue.h" />
     <ClInclude Include="Core\RendererMinimal.h" />
-    <ClInclude Include="Utility\RendererMinimal.h" />
+    <ClInclude Include="Renderer\Engine.h" />
+    <ClInclude Include="Renderer\SwapChain.h" />
+    <ClInclude Include="Utility\CoreMinimal.h" />
+    <ClInclude Include="Utility\d3dx12.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Utility\test.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    <ClCompile Include="Renderer\DescriptorHeap.cpp" />
+    <ClCompile Include="Renderer\GraphicDevice.cpp" />
+    <ClCompile Include="Renderer\CommandQueue.cpp" />
+    <ClCompile Include="Renderer\Engine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Renderer\SwapChain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

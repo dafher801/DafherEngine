@@ -72,22 +72,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
+    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
     <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\debug;$(SolutionDir)x64\Debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
-    <LibraryPath>$(SolutionDir)x64\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
+    <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\release;$(SolutionDir)x64\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
+    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
     <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\debug;$(SolutionDir)x64\Debug;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)x64\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
-    <LibraryPath>$(SolutionDir)x64\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Boost-Libraries_1_82_0\source\boost\container\;$(SolutionDir)Boost-Libraries_1_82_0\source\boost\;$(SolutionDir)Boost-Libraries_1_82_0\source\;$(SolutionDir)Engine\Utility\;$(SolutionDir)Client\Utility\</IncludePath>
+    <LibraryPath>$(SolutionDir)Boost-Libraries_1_82_0\binaries\Windows\Visual-Studio-2022-v143-Compiler\release;$(SolutionDir)x64\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -95,7 +95,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility;$(SolutionDir)Client\Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Boost-Libraries_1_82_0\source\boost</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -115,7 +115,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility;$(SolutionDir)Client\Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Boost-Libraries_1_82_0\source\boost</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -135,7 +135,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility;$(SolutionDir)Client\Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Boost-Libraries_1_82_0\source\boost</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -155,7 +155,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Utility;$(SolutionDir)Client\Utility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Boost-Libraries_1_82_0\source\boost</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>

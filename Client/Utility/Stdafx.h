@@ -8,6 +8,6 @@
 
 #include <SDKDDKVer.h>
 
-#include "RendererMinimal.h"
+#include "CoreMinimal.h"
 
 #endif
