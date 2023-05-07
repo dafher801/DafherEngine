@@ -8,19 +8,17 @@ class Engine
 {
 public:
 
+	Engine();
+
 	void Init(const WindowInfo& windowInfo);
 
 	void Render();
 
+	void RenderBegin();
+
+	void RenderEnd();
+
 	void ResizeWindow(uint32 width, uint32 height);
-
-private:
-
-	Engine() = default;
-
-	Engine(const Engine& engine) = default;
-
-	Engine& operator=(const Engine& engine) = default;
 
 private:
 

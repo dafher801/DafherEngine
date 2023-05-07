@@ -41,6 +41,11 @@ using Matrix = DirectX::XMMATRIX;
 using Viewport = D3D12_VIEWPORT;
 using Rect = D3D12_RECT;
 
+enum 
+{ 
+	SWAP_CHAIN_BUFFER_COUNT = 2
+};
+
 struct WindowInfo
 {
 	HWND hwnd;

@@ -1,5 +1,7 @@
 
 #include "CommandQueue.h"
+#include "SwapChain.h"
+#include "DescriptorHeap.h"
 
 CommandQueue::~CommandQueue()
 {
@@ -42,9 +44,44 @@ void CommandQueue::WaitSync()
 
 void CommandQueue::RenderBegin(const D3D12_VIEWPORT* viewport, const D3D12_RECT* rect)
 {
+	commandAllocator->Reset();
+	commandList->Reset(commandAllocator.Get(), nullptr);
 
+	D3D12_RESOURCE_BARRIER barrier = CD3DX12_RESOURCE_BARRIER::Transition(
+		swapChain->GetCurrentBackBufferResource().Get(),
+		D3D12_RESOURCE_STATE_PRESENT,
+		D3D12_RESOURCE_STATE_RENDER_TARGET);
+
+	commandList->ResourceBarrier(1, &barrier);
+	commandList->RSSetViewports(1, viewport);
+	commandList->RSSetScissorRects(1, rect);
+
+	D3D12_CPU_DESCRIPTOR_HANDLE backBufferView = descriptorHeap->GetBackBufferView();
+	commandList->ClearRenderTargetView(backBufferView, DirectX::Colors::LightSteelBlue, 0, nullptr);
+	commandList->OMSetRenderTargets(1, &backBufferView, FALSE, nullptr);
 }
 
 void CommandQueue::RenderEnd()
 {
+	D3D12_RESOURCE_BARRIER barrier = CD3DX12_RESOURCE_BARRIER::Transition(
+		swapChain->GetCurrentBackBufferResource().Get(),
+		D3D12_RESOURCE_STATE_RENDER_TARGET,
+		D3D12_RESOURCE_STATE_PRESENT);
+
+	commandList->ResourceBarrier(1, &barrier);
+	commandList->Close();
+
+	ID3D12CommandList* commandListArray[] = { commandList.Get() };
+	commandQueue->ExecuteCommandLists(_countof(commandListArray), commandListArray);
+	
+	swapChain->Present();
+
+	WaitSync();
+
+	swapChain->SwapIndex();
+}
+
+inline Microsoft::WRL::ComPtr<ID3D12CommandQueue> CommandQueue::GetCommandQueue() const
+{
+	return commandQueue;
 }

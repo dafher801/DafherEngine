@@ -11,6 +11,11 @@ void GraphicDevice::Init()
 	::D3D12CreateDevice(nullptr, D3D_FEATURE_LEVEL_11_0, IID_PPV_ARGS(&device));
 }
 
+inline Microsoft::WRL::ComPtr<IDXGIFactory> GraphicDevice::GetDXGI() const
+{
+	return dxgi;
+}
+
 inline Microsoft::WRL::ComPtr<ID3D12Device> GraphicDevice::GetDevice() const
 {
 	return device;

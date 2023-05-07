@@ -22,6 +22,8 @@ public:
 
 	void RenderEnd();
 
+	inline Microsoft::WRL::ComPtr<ID3D12CommandQueue> GetCommandQueue() const;
+
 private:
 
 	Microsoft::WRL::ComPtr<ID3D12CommandQueue> commandQueue;

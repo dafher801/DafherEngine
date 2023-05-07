@@ -7,20 +7,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\RendererMinimal.h" />
-    <ClInclude Include="Utility\CoreMinimal.h" />
-    <ClInclude Include="Renderer\Engine.h" />
-    <ClInclude Include="Renderer\CommandQueue.h" />
-    <ClInclude Include="Renderer\GraphicDevice.h" />
-    <ClInclude Include="Renderer\DescriptorHeap.h" />
-    <ClInclude Include="Renderer\SwapChain.h" />
-    <ClInclude Include="Utility\d3dx12.h" />
+    <ClCompile Include="Renderer\CommandQueue.cpp" />
+    <ClCompile Include="Renderer\DescriptorHeap.cpp" />
+    <ClCompile Include="Renderer\Engine.cpp" />
+    <ClCompile Include="Renderer\GraphicDevice.cpp" />
+    <ClCompile Include="Renderer\SwapChain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Renderer\Engine.cpp" />
-    <ClCompile Include="Renderer\CommandQueue.cpp" />
-    <ClCompile Include="Renderer\GraphicDevice.cpp" />
-    <ClCompile Include="Renderer\DescriptorHeap.cpp" />
-    <ClCompile Include="Renderer\SwapChain.cpp" />
+    <ClInclude Include="Renderer\CommandQueue.h" />
+    <ClInclude Include="Renderer\DescriptorHeap.h" />
+    <ClInclude Include="Renderer\Engine.h" />
+    <ClInclude Include="Renderer\GraphicDevice.h" />
+    <ClInclude Include="Renderer\SwapChain.h" />
+    <ClInclude Include="Utility\CoreMinimal.h" />
+    <ClInclude Include="Utility\d3dx12.h" />
   </ItemGroup>
 </Project>

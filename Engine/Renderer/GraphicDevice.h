@@ -10,6 +10,8 @@ public:
 
 	void Init();
 
+	inline Microsoft::WRL::ComPtr<IDXGIFactory> GetDXGI() const;
+
 	inline Microsoft::WRL::ComPtr<ID3D12Device> GetDevice() const;
 
 private:

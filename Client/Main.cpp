@@ -33,7 +33,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     MSG msg;
 
-    while (GetMessage(&msg, nullptr, 0, 0))
+    //WindowInfo windowInfo = { 0, 800, 600, true };
+
+    //std::unique_ptr<Engine> engine = std::make_unique<Engine>();
+    //engine->Init(windowInfo);
+
+    while (true)
     {
         if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
         {
@@ -48,6 +53,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                 DispatchMessage(&msg);
             }
         }
+
+        //engine->Render();
     }
 
     return (int) msg.wParam;
